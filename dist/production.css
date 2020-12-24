@@ -1,0 +1,273 @@
+/* ====================================
+// ====================================
+// Variables
+// ====================================
+// ================================= */
+:root {
+    /*Colours*/
+    /*--body-background: #000000;  /*Not in use*/
+    /*Header*/
+    --header-background: #000000; /*Header Background*/
+    --header-colour-tabs: #ffffff;
+    --header-colour-highlight: #aa0000;
+    /*Hero*/
+    /*--hero-background: #000000; /*Not in use*/
+    /*--hero-colour: #000000; /*Not in use*/
+    --hero-colour-button: #ffffff;
+    --hero-background-button: #000000;
+    /*About*/
+    --about-background: #ffffff;
+    --about-colour-section: #21150d;
+    --about-colour-body: #1f1f1f;
+    --about-colour-heading: #aa0000;
+    /*--about-colour-highlight: #000000; /*Not in use*/
+    /*Opening*/
+    /*--opening-background: #00000; /*Not in use*/
+    /*--opening-background-individual: #000000; /*Not in use*/
+    --opening-colour: #aa0000;
+    --opening-colour-days: #ffffff;
+    /*--opening-colour-highlight: #000000; /*Not in use*/
+    /*Menu*/
+    --menu-background: #ffffff;
+    --menu-colour-heading: #aa0000;
+    --menu-colour-item: #1f1f1f;
+    --menu-colour-description: #1f1f1f;
+    --menu-colour-from: #1f1f1f;
+    --menu-colour-price: #aa0000;
+    --menu-colour-button: #aa0000;
+    /*Gallery*/
+    --gallery-background: #091523;
+    --gallery-colour-section: #ffffff;
+    /*Reservation*/
+    --reservation-background: #ffffff;
+    --reservation-colour-heading: #aa0000;
+    --reservation-colour-labels: #21150d;
+    --reservation-background-fields: #ffffff;
+    --reservation-colour-fields: #21150d;
+    --reservation-colour-button: #aa0000;
+    /*Testimonials*/
+    /*--testimonials-background: #000000; /*Not in use*/
+    --testimonials-background-individual: #e7dbd1;
+    --testimonials-colour-body: #ffffff;
+    --testimonials-colour-author: #aa0000;
+    --testimonials-colour-quotation: #ffffff;
+    /*Contact*/
+    --contact-background: #091523;
+    --contact-colour-heading: #ffffff;
+    --contact-background-fields: #ffffff;
+    --contact-colour-fields: #21150d;
+    --contact-colour-button: #aa0000;
+    /*Footer*/
+    --footer-background: #091523;
+    --footer-colour: #ffffff;
+}
+/*Header Background Colour*/
+body #header {
+    background: var(--header-background) !important;
+}
+/*Heading Colour*/
+header#header .menu-item a {
+    color: var(--header-colour-tabs) !important;
+}
+/*Header Active and hover link*/
+#header .nav .menu-item.current a,
+#header .nav .menu-item a:hover {
+    color: var(--header-colour-highlight) !important;
+}
+/* CTA */ /*MISSING ADDRESS AND POWERED BY TEXT*/
+#owl-main-text a {
+    color: var(--hero-colour-button) !important;
+}
+#owl-main-text a h1 {
+    color: var(--hero-colour-button) !important;
+}
+/*ABOUT SECTION*/
+/*Remove Ornament*/
+.ornament {
+    display: none !important;
+}
+/*Background Colour*/
+#aboutSection.about {
+    background: var(--about-background) !important;
+}
+/*Text*/
+#aboutSection p.text {
+    color: var(--about-colour-body) !important;
+}
+/*Headings*/
+#aboutSection .container h2.heading {
+    color: var(--about-colour-heading) !important;
+}
+h2.section-title, .section-subtitle, .container section.reservations h3.contact-details, section.reservations p {
+    color: var(--about-colour-section) !important;
+}
+/*OPENING HOURS*/
+/*Days*/
+#timetable .section-subtitle.days {
+    color: var(--opening-colour-days) !important;
+}
+/*Store name*/
+#timetable .hours,
+#timetable h2 {
+    color: var(--opening-colour) !important;
+}
+/*Times*/
+#timetable .hours,
+#timetable h2 {
+    color: var(--opening-colour) !important;
+}
+/*MENU SECTION*/
+/*Colour for Heading Font*/
+section.menu .container h3 {
+    color: var(--menu-colour-heading) !important;
+}
+/*Menu item name font*/
+section.menu ul li {
+    color: var(--menu-colour-item) !important;
+}
+/*Menu item Price*/
+section.menu span {
+    color: var(--menu-colour-price) !important;
+}
+/*Colour for Menu item description*/
+#menu.menu ul li .detail {
+    color: var(--menu-colour-description) !important;
+}
+/*Colour for FROM before price*/
+section#menu .price i {
+    color: var(--menu-colour-from) !important;
+}
+/*Order online button*/
+section#menu a.button.menu,
+section#menu .button.menu {
+    color: var(--menu-colour-button) !important;
+    border: 2px solid var(--menu-colour-button) !important;
+    background: transparent !important;
+}
+section#menu a.button.menu:hover,
+section#menu .button.menu:hover {
+    background: var(--menu-colour-button) !important;
+    color: var(--menu-background) !important;
+}
+/*Background Colour*/
+section#menu {
+    background-color: var(--menu-background) !important;
+}
+/*GALLERY*/
+/*Background colour*/
+.section.dark.gallery {
+    background: var(--gallery-background) !important;
+}
+/*Section title*/
+section#gallery .section-title {
+    color: var(--gallery-colour-section) !important;
+}
+/*RERERVATIONS FORM*/
+/*textfield input*/
+#reservations.reservations input,
+#reservations.reservations textarea {
+    color: var(--reservation-colour-fields) !important;
+}
+/*Submit button*/
+#reservations.reservations input#reservations_submit {
+    color: var(--reservation-colour-button) !important;
+    border: 2px solid var(--reservation-colour-button) !important;
+    background: transparent !important;
+}
+#reservations input#reservations_submit.button.center:hover {
+    background: var(--reservation-colour-button) !important;
+    color: var(--reservation-background) !important;
+}
+/*Reservation form Headings*/
+section.reservations .contact-form p,
+section.reservations .container h3 {
+    color: var(--reservation-colour-heading) !important;
+}
+/*Reservation form labels*/
+#reservations label {
+    color: var(--reservation-colour-labels) !important;
+}
+/*Background*/
+#reservations.reservations {
+    background: var(--reservation-background) !important;
+}
+/*Fields background*/
+#reservations input,
+#reservations textarea {
+    background: var(--reservation-background-fields) !important;
+}
+/*TESTIMONIALS*/
+/*Author*/
+section.testimonials .container h2,
+section.testimonials .container .item span.author {
+    color: var(--testimonials-colour-author) !important;
+}
+/*Testimonial text*/
+section.testimonials .item p {
+    color: var(--testimonials-colour-body) !important;
+}
+/*CONTACT FORM*/
+/*Input fields*/
+.section#contact input[type="text"],
+.section#contact input[type="email"],
+.section#contact textarea {
+    background: var(--contact-background-fields) !important;
+}
+.section#contact input[type="text"],
+.section#contact input[type="email"],
+.section#contact textarea,
+.section#contact input[type="text"]::placeholder,
+.section#contact input[type="email"]::placeholder,
+.section#contact textarea::placeholder {
+    font-family: var(--main-font) !important;
+    color: var(--contact-colour-fields) !important;
+    /*border: 1px solid(--body-font-color);*/
+}
+/*submit button*/
+.section#contact input#contact_submit.button.center {
+    font-family: var(--primary-font) !important;
+    color: var(--contact-colour-button) !important;
+    border: 2px solid var(--contact-colour-button) !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+}
+#contact input#contact_submit.button.center:hover {
+    background: var(--contact-colour-button) !important;
+    color: var(--contact-background) !important;
+}
+/*Background Colour*/
+section#contact {
+    background: var(--contact-background) !important;
+}
+/*Heading colour*/
+section#contact h2.section-title {
+    color: var(--contact-colour-heading) !important;
+}
+/*FOOTER*/
+#footer {
+    background: var(--footer-background) !important;
+}
+.footerlink a {
+    color: var(--footer-colour) !important;
+}
+/*ADDITIONAL PAGES*/
+/*About Page*/
+/*Background Colour*/
+#about.about {
+    background: var(--about-background) !important;
+}
+/*Text*/
+#about p.text {
+    color: var(--about-colour-body) !important;
+}
+/*Headings*/
+#about .container h2.heading {
+    color: var(--about-colour-heading) !important;
+}
+/*CONTACT PAGE*/
+.reservation-phone a {
+    color: var(--about-colour-heading) !important;
+}
+.container #reservation .section-subtitle a {
+    color: var(--about-colour-heading) !important;
+}
