@@ -60,7 +60,25 @@
     /*Footer*/
     --footer-background: #091523;
     --footer-colour: #ffffff;
+
+	/*Fonts*/
+	--heading-font: ; /* Used for main headings */
+    --main-font: ; /* Used for main body text + Navigation */
 }
+
+/*FONTS*/
+/*Heading Fonts*/
+h2.section-title, section.testimonials h2, section.menu h3, section.reservations h4, span.aboutButton a {
+    font-family: var(--heading-font) !important;
+}
+/*Body Fonts*/
+#header .menu-item a, p.text, section.menu ul li, section.menu ul li .detail, section.menu span, .section-subtitle, section.reservations p, a.button.menu, .button.menu, .item p, input, textarea, a.button, .button, button, label {
+    font-family: var(--main-font) !important;
+}
+
+
+
+
 /*Header Background Colour*/
 body #header {
     background: var(--header-background) !important;
