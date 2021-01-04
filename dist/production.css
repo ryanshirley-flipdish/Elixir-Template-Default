@@ -4,6 +4,8 @@
 // ====================================
 // ================================= */
 :root {
+	/*Font-Size*/
+     --new-font-size: "17px";
     /*Colours*/
     /*--body-background: #000000;  /*Not in use*/
     /*Header*/
@@ -65,7 +67,10 @@
 	--heading-font: ; /* Used for main headings */
     --main-font: ; /* Used for main body text + Navigation */
 }
-
+/*New Font*/
+#aboutSection p.text{
+ font-size: var(--new-font-size) !important;
+ }
 /*FONTS*/
 /*Heading Fonts*/
 h2.section-title, section.testimonials h2, section.menu h3, section.reservations h4, span.aboutButton a {
