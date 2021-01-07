@@ -10,6 +10,7 @@
     --header-logo-size: 150px;
     /*Font-Size*/
     --about-body-font-size: 17px;
+	--about-button-font-size: 26px;
     /*Colours*/
     /*--body-background: #000000;  /*Not in use*/
     /*Header*/
@@ -26,7 +27,7 @@
     --about-colour-section: #21150d;
     --about-colour-body: #1f1f1f;
     --about-colour-heading: #aa0000;
-    /*--about-colour-highlight: #000000; /*Not in use*/
+    --about-colour-highlight: #000000; /*about button if present*/
     /*Opening*/
     /*--opening-background: #00000; /*Not in use*/
     /*--opening-background-individual: #000000; /*Not in use*/
@@ -140,6 +141,23 @@ header#header .menu-item a {
     color: var(--hero-colour-button) !important;
 }
 /*ABOUT SECTION*/
+/*Order Button*/
+#aboutSection .orderButton, #aboutSection .aboutButton {
+    border: 1px var(--about-colour-highlight) solid;
+    background-color: var(--about-colour-highlight) !important;
+    color: var(--about-background) !important;
+    padding: 3px 10px;
+    font-size: var(--about-button-font-size) !important;
+    margin-bottom: 20px
+}
+
+#aboutSection .orderButton:hover, #aboutSection .aboutButton:hover {
+    border: 1px var(--about-colour-highlight) solid;
+    background-color: var(--about-background) !important;
+    color: var(--about-colour-highlight) !important;
+}
+
+
 /*Remove Ornament*/
 .ornament {
     display: none !important;
