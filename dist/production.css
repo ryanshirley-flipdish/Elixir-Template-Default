@@ -87,7 +87,11 @@ h2.section-title,
 section.testimonials h2,
 section.menu h3,
 section.reservations h4,
-span.aboutButton a {
+span.aboutButton a,
+#owl-main-text h1,#about h2.heading,
+#aboutSection h2.heading,
+section.reservations h3,
+section.menu h3 {
     font-family: var(--heading-font) !important;
 }
 /*Body Fonts*/
@@ -106,7 +110,12 @@ textarea,
 a.button,
 .button,
 button,
-label {
+label,
+.slide-content p,
+#home-slider .my-link-color a,
+#footer .my-link-color a,
+input#contact_submit
+ {
     font-family: var(--main-font) !important;
 }
 
